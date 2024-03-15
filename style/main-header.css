@@ -1,0 +1,142 @@
+/* СТИЛИ HEADER ПОД МОБИЛЬНУЮ ВЕРСТИЮ (320px)*/
+ 
+ 
+ /* header__wrapper */
+
+ .header__wrapper {
+    height: 88px;
+    background-color: white;
+    padding: 0 16px 0 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.header__wrapper::after {
+    content: " ";
+    
+    background: #EAEAEA;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+
+    position: absolute;
+    right: 40.5%;
+    top: 30px;
+}
+
+/* левый блок header */
+
+.header__menu {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    padding: 0 0 0 16px;
+}
+
+
+/* правый блок header  */
+
+
+.tools {
+    display: flex;
+    align-items: center;
+}
+
+
+/* МЕДИАЗАПРОСЫ (720 и 1120 px) */
+
+
+/* header__wrapper */
+
+
+@media (min-width: 768px) {
+
+    .header__wrapper {
+        padding: 0px 24px 0 24px;
+    }
+
+    .header__wrapper::after { 
+        display: none;
+    }
+
+    .icon--application {
+        margin-left: 32px;
+   }
+
+   .header__menu::before {
+        content: " ";
+
+        background: #EAEAEA;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+
+        position: absolute;
+        left: 32%;
+    }
+
+    .logo {
+        padding-left: 32px;
+    }
+
+    .header__tools {
+        position: relative;
+    }
+
+    .header__tools::after {
+        content: " ";
+
+        background: #EAEAEA;
+        width: 2px;
+        height: 32px;
+        border-radius: 1px;
+
+        position: absolute;
+        right: 40%;
+    }
+
+}
+
+@media (min-width: 1120px) {
+
+    .header__wrapper {
+        background-color: #F8F8F8;
+        padding: 0 40px 0 40px;
+        justify-content: end;
+    }
+
+    .icon--status, .icon--application {
+        
+        background-color: #F8F8F8;
+        background-repeat: no-repeat;
+        background-position: right;
+        margin: 0;
+
+        position: relative;
+        top: 20px;
+        z-index: 2;
+        min-width: 200px;
+    }
+
+    .icon--application {
+        min-width: 220px;
+    }
+
+    .header__tools::after {
+        display: none;
+    }
+    
+} 

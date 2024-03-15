@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: #F8F8F8;
+    overflow-x: auto;
+    font-size: 14px;
+    font-family: 'TT Lakes';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body__wrapper {
+    min-width: 320px;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.lg-visible {
+    display: none;
+}
+
+.sm-visible {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .sm-visible {
+        display: block;
+    }
+}
+
+@media (min-width: 1120px) {
+    .lg-hidden {
+        display: none;
+    }
+
+    .lg-visible {
+        display: block;
+    }
+}
+
