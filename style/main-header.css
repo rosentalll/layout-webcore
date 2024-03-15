@@ -113,14 +113,12 @@
 @media (min-width: 1120px) {
 
     .header__wrapper {
-        background-color: #F8F8F8;
+        background-color: transparent;
         padding: 0 40px 0 40px;
         justify-content: end;
     }
 
     .icon--status, .icon--application {
-        
-        background-color: #F8F8F8;
         background-repeat: no-repeat;
         background-position: right;
         margin: 0;
